@@ -21,10 +21,9 @@ class dMultiCoin_c : public dEn_c {
 		int type;
 		int coinValue;
 
-		nw4r::snd::SoundHandle handle;
-
 		mHeapAllocator_c allocator;
 		m3d::mdl_c bodyModel;
+
 		void updateModelMatrices();
 
 		void playerCollision(ActivePhysics *apThis, ActivePhysics *apOther);
@@ -138,7 +137,7 @@ int dMultiCoin_c::onDraw() {
 	return true;
 }
 
-// Collision
+// collisions
 
 void dMultiCoin_c::playerCollision(ActivePhysics *apThis, ActivePhysics *apOther) {
     this->aPhysics.removeFromList();
