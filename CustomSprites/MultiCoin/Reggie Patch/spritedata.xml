@@ -1,0 +1,6 @@
+<sprite id="AAA" name="Multi-Coin" notes="A large coin that can award either 10 or 100 coins.">
+    <list nybble="5" title="Type" comment="This determines what variation of the coin to use." comment2="Multiple types and functions for this sprite can be added by modifying its code file.">
+        <entry value="0">10 Coin</entry>
+        <entry value="1">100 Coin</entry>
+    </list>
+</sprite>
