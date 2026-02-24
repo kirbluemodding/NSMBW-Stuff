@@ -1,5 +1,5 @@
 # 10/100 Coin
-A remake of surrealism's recreation of the SMM2 10/30/50 coin, mixed with the NSMB2 10/100 coins found in roulette blocks and rainbow levels. This sprite quite easily supports more types than just the 10/100 coin provided by default. If you wish to add more types, up to 14 more options should be supported by default, although you could probably add even more.
+A complete remake/overhaul of surrealism's recreation of the SMM2 10/30/50 coin (what a mouthful). The model is the NSMB2 10/100 coins found in roulette blocks and rainbow levels. This sprite quite easily supports more types than just the 10/100 coin provided by default. If you wish to add more types, up to 14 more options should be supported by default, although you could probably add even more.
 
 ## Setup
 - `EN_COIN_MULTI` is this sprite's profile name. As mentioned by the Custom Sprites general README, you will need to define this in the MoreSprites header files.
