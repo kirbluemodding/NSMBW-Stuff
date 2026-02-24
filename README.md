@@ -12,3 +12,4 @@ This is what's currently released:
 When other people are involved in something made here, their name will be listed. **If you deserve credit but were not credited (very sorry), please open a pull request and make that change.**
 - Newer Team: NewerSMBW SpriteTex
 - ReaZ0N23: `displayScoreAddPopup` function documentation used for the Multi-Coin
+- surrealism: Original 10 Coin sprite inspiration/loose base
