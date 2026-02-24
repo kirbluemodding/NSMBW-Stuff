@@ -1,0 +1,27 @@
+FlakeyStardustWhite:
+	li r5, 0xFF
+	li r4, 0xFF
+	li r3, 0xD0
+	li r3, 0xFF
+	blr
+	
+FlakeyStardustGold:
+	li r5, 0xFF
+	li r4, 0x80
+	li r3, 0xD0
+	li r3, 0x0
+	blr
+	
+FlakeyStardustPurple:
+	li r5, 0x66
+	li r4, 0x00
+	li r3, 0xD0
+	li r3, 0x99
+	blr
+	
+FlakeyStardustMauve:
+	li r5, 0xCC
+	li r4, 0x99
+	li r3, 0xD0
+	li r3, 0xCC
+	blr
