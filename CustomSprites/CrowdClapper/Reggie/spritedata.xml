@@ -1,0 +1,3 @@
+<sprite id="AAA" name="Event Crowd Clapper" notes="Triggers the generic audience clapping sound effects whenever the specified event is triggered.">
+    <value nybble="6" title="Triggering Event ID" comment="When this event is triggered, the sound effects for a crowd clapping will begin."/>
+</sprite>
