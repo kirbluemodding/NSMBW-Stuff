@@ -1,0 +1,5 @@
+  - name: TEX_SpinyCheep
+    type: branch_insn
+    branch_type: bl
+    src_addr_pal: 0x80a8a158
+    target_func: 'TEX_SpinyCheep'

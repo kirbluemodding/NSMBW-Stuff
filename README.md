@@ -6,10 +6,11 @@ If you have trouble/issues setting up one of these things, feel free to open an 
 This is what's currently released:
 - [SpriteTex fixes/additions](/SpriteTex) (NewerSMBW, NSMBWer+)
 - [Custom Sprites](/CustomSprites) (NewerSMBW*, NSMBWer+)
-    - NewerSMBW does not come with support for [More Sprites](https://github.com/Developers-Collective/NSMBW-Custom-Sprites/releases/tag/MoreSprites) by default. If you want to use these, you'll need to install that before use.
+    - NewerSMBW lacks support for [More Sprites](https://github.com/Developers-Collective/NSMBW-Custom-Sprites/releases/tag/MoreSprites) by default. As such, its installation is required before use of these custom sprites in NewerSMBW.
 
 ## Credits
 When other people are involved in something made here, their name will be listed. **If you deserve credit but were not credited (very sorry), please open a pull request and make that change.**
 - Newer Team: NewerSMBW SpriteTex
 - ReaZ0N23: `displayScoreAddPopup` function documentation used for the Multi-Coin
-- surrealism: Original 10 Coin sprite inspiration/loose base
+- surrealism: Original 10 Coin sprite, which inspired the Multi-Coin and served as a rough base for it
+- The wonderful people behind the tools that make NSMBW modding, and therefore this repository, possible

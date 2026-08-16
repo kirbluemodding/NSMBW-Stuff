@@ -1,0 +1,5 @@
+  - name: TEX_PalmTree
+    type: branch_insn
+    branch_type: bl
+    src_addr_pal: 0x8088c484
+    target_func: 'TEX_PalmTree'

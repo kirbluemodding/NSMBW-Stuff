@@ -5,7 +5,7 @@ class SpriteImage_MultiCoin(SLib.SpriteImage_StaticMultiple):
 
     def loadImages():
         for i in range(4): # type
-            ImageCache[f'MultiCoin{i}'] = SLib.GetImg(f'MultiCoin{i}.png')
+            ImageCache[f'MultiCoin{i}'] = SLib.GetImage(f'MultiCoin{i}.png')
 
     def dataChanged(self):
         type = ((self.parent.spritedata[2] & 0xF0) >> 4) % 4
@@ -19,4 +19,4 @@ class SpriteImage_MultiCoin(SLib.SpriteImage_StaticMultiple):
 
         super().dataChanged()
 
-#DELETEME make sure you also remember to define this at the very bottom of the file
+# make sure you also remember to assign this image to your sprite ID at the very bottom of the file!
