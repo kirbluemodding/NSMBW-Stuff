@@ -19,7 +19,7 @@ This is what's currently released:
     - [Yoshi Bugfixes](/Bugfixes/Yoshi) - Yoshi collision/miscellaneous fixes
         - [Mechakoopa](/Bugfixes/Yoshi/Mechakoopa)
 - [Miscellaneous](/Miscellaneous) (NewerSMBW, NSMBWer+) - Things that do not fit into the other categories
-    - [Bowser Jr. Fireball Spawn Area](/FallFire) - Replaces the duplicate fourth magic fireball spawn area type with Bowser Jr.'s flames
+    - [Bowser Jr. Fireball Spawn Area](Miscellaneous/FallFire) - Replaces the duplicate fourth magic fireball spawn area type with Bowser Jr.'s flames
 
 ## Credits
 When other people are involved in something made here, their name will be listed. **If you deserve credit but were not credited (very sorry), please open a pull request and make that change.**
