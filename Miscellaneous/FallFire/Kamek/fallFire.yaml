@@ -1,0 +1,31 @@
+source_files: [../src/fallFire.cpp]
+hooks: 
+  - name: FallFireNewLoadModel
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x807e7860
+    target_func: 'daFallFire_c::newLoadModel(void)'
+
+  - name: FallFireNewUpdateEffect
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x807e7dd0
+    target_func: 'daFallFire_c::newUpdateEffect(void)'
+
+  - name: FallFireNewHitEffect
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x807e7e10
+    target_func: 'daFallFire_c::newHitEffect(void)'
+
+  - name: FallFireNewShootSounds
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x807e7ec0
+    target_func: 'daFallFire_c::initializeState_Move(void)'
+
+  - name: FallFireNewHitSounds
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x807e7f80
+    target_func: 'daFallFire_c::initializeState_Hit(void)'

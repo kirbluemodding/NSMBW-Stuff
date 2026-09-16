@@ -1,0 +1,13 @@
+source_files: [../src/mechaKoopa.cpp]
+hooks:
+  # fix yoshi from getting hurt by jumping on the mecha koopa
+  - name: MechaKoopaNewYoshiCollision
+    type: add_func_pointer
+    src_addr_pal: 0x80afbac4
+    target_func: 'MechaKoopaNewYoshiCollision(daEnMechaKoopa_c *, ActivePhysics *, ActivePhysics *)'
+
+  # fix yoshi from killing the mecha koopa with a ground pound
+  - name: MechaKoopaNewYoshiGroundPound
+    type: add_func_pointer
+    src_addr_pal: 0x80afbae4
+    target_func: 'MechaKoopaNewYoshiGroundPound(daEnMechaKoopa_c *, ActivePhysics *, ActivePhysics *)'

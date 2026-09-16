@@ -1,0 +1,29 @@
+<sprite id="392" name="Magic Fireball Spawn Area" noyoshi="True" notes="This sprite spawns Koopaling Fireballs from the screen's edge towards the players. The fireballs are unaffected by terrain and will travel across the entire screen unhindered." files="boss_ef_attack.arc">
+    <value nybble="11" title="Location ID" comment="The fireballs will only spawn while a player is in this Location. However, this sprite works without a Location." idtype="Location"/>
+    <list nybble="8" title="Color of Fireballs" comment="This determines the color of the fireball. Different colored fireballs do not have different effects.">
+        <entry value="0">Light Blue</entry>
+        <entry value="1">Purple</entry>
+        <entry value="2">Green</entry>
+        <entry value="3">Orange (Fire)</entry>
+    </list>
+    <list nybble="9" title="Rate of Fire" comment="This determines the frequency of the fireball spawns, in real seconds. In retail levels, Nintendo used 12 and 14.">
+        <entry value="1">1</entry>
+        <entry value="2">2</entry>
+        <entry value="0">2.3</entry>
+        <entry value="3">3</entry>
+        <entry value="4">4</entry>
+        <entry value="5">5</entry>
+        <entry value="6">6</entry>
+        <entry value="7">7</entry>
+        <entry value="8">8</entry>
+        <entry value="9">9</entry>
+        <entry value="10">10</entry>
+        <entry value="11">11</entry>
+        <entry value="12">12</entry>
+        <entry value="13">13</entry>
+        <entry value="14">14</entry>
+        <entry value="15">15</entry>
+    </list>
+    <dualbox nybble="12.4" title1="Appears from Top" title2="Appears from Right" comment="This determines the portion of the screen the fireballs will appear from. The fireballs will appear from the opposite side of Mario's position on the screen."/>
+    <checkbox nybble="10.4" title="Always Appear from Above" comment="When this is set, the fireballs will always spawn just above the center of the screen. Otherwise, they will appear from the top or bottom side of the screen opposite to Mario's position." requirednybble="12.4"/>
+</sprite> <!-- #392: Magic Fireball Spawn Area -->
