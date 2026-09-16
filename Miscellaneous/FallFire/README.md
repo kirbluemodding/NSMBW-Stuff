@@ -4,6 +4,7 @@ In retail, (this is a gross simplification but) the magic fireball spawning area
 - 1 loads the purple flames shot by Roy
 - 2 loads the green flames shot by Iggy
 - 3 loads the light blue flames shot by Larry, again
+
 Naturally, it would be nice to have the ability to replace the duplicate fourth option with a unique one, so that's exactly what I did. With this patch, making the sprite load the fourth color/variant/type of the magic fireball spawning area actor will make it spawn Bowser Jr.'s flames instead of Larry's. However, you can actually make it load almost anything you want (including the flames of the other Koopalings) if you want to edit the code, which I've tried to keep nice and simple.
 
 > [!WARNING]
