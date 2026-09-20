@@ -1,0 +1,18 @@
+source_files: [../src/music.cpp]
+hooks:
+  - name: MoreValidSongs
+    type: patch
+    addr_pal: 0x8019ba54
+    data: '281D0099'
+
+  - name: NewBgmID
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x8019e120
+    target_func: 'getGameBgmID(void *, unsigned int)'
+ 
+  - name: NewControlBgmID
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x8019e170
+    target_func: 'getGameControlBgmID(void *, unsigned int)'
