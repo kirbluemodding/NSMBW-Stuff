@@ -7,6 +7,7 @@ This is a (hopefully) much cleaner and less buggy system of adding custom music 
 - Separation of fast tracks from their regular counterparts
     - IDs can use completely different songs for their fast variants (previous systems forced the songs to be named similarly, like `SONG` and `SONG_F`)
     - IDs can use the regular song for their fast variants by having the fast variant load the original track (previous systems would either not play any music for the fast variant if one was missing, or required you to duplicate the song for its fast variant)
+- Custom control track (dance point) support
 
 > [!WARNING]
 > This patch may cause issues with MoreSFX. However, some kind of Pysar replacement is almost certain to come about in the near future due to Pysar's release (in fact, I'm pretty sure you don't even need MoreSFX to add non-looping custom sound effects anymore!)
@@ -26,6 +27,8 @@ This is a (hopefully) much cleaner and less buggy system of adding custom music 
     instance__11SndSceneMgr = 0x8042a788;
     BrstmNormal = 0x802f69f0;
     BrstmFast = 0x802f6ad8;
+    BgmControlTrackNormal = 0x802f6bc0;
+	BgmControlTrackFast = 0x802f6ca8;
     ```
 - Compile your code
 ### Actually adding new songs

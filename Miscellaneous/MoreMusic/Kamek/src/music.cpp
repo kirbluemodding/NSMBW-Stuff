@@ -3,7 +3,7 @@
 
 struct Song {
 	u32 trackID;
-	u32 controlTrackID; // seemingly always dummied out, i'll keep it here just in case
+	u32 controlTrackID; // handles bahp/dance/whatever points in a song
 };
 
 
@@ -11,11 +11,11 @@ struct Song {
 
 
 const Song NewBrstmNormal [] = {
-	{ /* put your song name defined in sfx.h, or your song ID here! */, SE_DEMO_OP_DUMMY_U }, // 100
+	{ /* song name defined in sfx.h, or your song ID */, /* control track name/ID for the song */ }, 	// 100
 };
 
 const Song NewBrstmFast [] = {
-	{ /* put your song name defined in sfx.h, or your song ID here! */, SE_DEMO_OP_DUMMY_U }, // 100
+	{ /* fast song name defined in sfx.h, or its ID */, /* fast control track name/ID for it */ }, 		// 100
 };
 
 
@@ -24,7 +24,7 @@ const Song NewBrstmFast [] = {
 
 class SndSceneMgr { 
 	public:
-		// we only need the fast check here
+		// we only need the variable for whether or not the song is fast here
 		u8 pad1[0x38];
 		bool isFast;
 		u8 pad2[0x1F];
@@ -33,17 +33,20 @@ class SndSceneMgr {
 };
 
 extern "C" {
-	extern Song BrstmNormal[];
-	extern Song BrstmFast[];
+	extern u32 BrstmNormal[];
+	extern u32 BrstmFast[];
+
+	extern u32 BgmControlTrackNormal[];
+	extern u32 BgmControlTrackFast[];
 }
 
 u32 getGameBgmID(void *self, u32 id) {
 	// non-custom songs (0-28)
 	if (id < 28) {
 		if (SndSceneMgr::instance->isFast) {
-			return BrstmFast[id].trackID;
+			return BrstmFast[id * 2];
 		}
-		return BrstmNormal[id].trackID;
+		return BrstmNormal[id * 2];
 	}
 	// new stuff (100 and above)
 	if (id >= 100) {
@@ -60,9 +63,9 @@ u32 getGameControlBgmID(void *self, u32 id) {
 	// non-custom songs (0-28)
 	if (id < 28) {
 		if (SndSceneMgr::instance->isFast) {
-			return BrstmFast[id].controlTrackID;
+			return BgmControlTrackFast[id * 2];
 		}
-		return BrstmNormal[id].controlTrackID;
+		return BgmControlTrackNormal[id * 2];
 	}
 	// new stuff (100 and above)
 	if (id >= 100) {
